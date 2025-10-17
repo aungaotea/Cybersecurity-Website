@@ -1,0 +1,173 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flex container for header and nav */
+.header-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #217eaa;
+    padding: 8px 16px;
+    margin-top: 32px; /* More space above */
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 12px -4px rgba(33,126,170,0.2); /* Subtle shadow for depth */
+    border-radius: 20px; /* Makes the nav bar rounded */
+    position: sticky;
+    top: 16px; /* Space from the top when sticky */
+    transition: box-shadow 0.3s, margin-top 0.3s;
+    z-index: 100;
+}
+
+.header-nav-container header {
+    background: none;
+    padding: 0;
+    margin-right: 48px; /* space between title and nav */
+    
+}
+
+.header-nav-container nav {
+    display: flex;
+    gap: 16px;
+}
+
+
+.header {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #217eaa;
+    padding: 2px;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none; 
+    display: inline-block;
+    transition: color 0.2s, transform 0.2s;
+
+
+}
+
+nav a:hover {
+  color: #f2f2f3;
+  transform: scale(1.15);
+}
+
+body {
+    background-color: #f2f2f3; /* Soft off-white */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Dark navy section for contrast */
+.section-navy {
+    background-color: #1a2634;
+    color: #f2f2f3;
+    padding: 24px 0;
+}
+
+/* Soft accent for highlights or cards */
+.accent-box {
+    background-color: #8ca4ac;
+    color: #1a2634;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 24px;
+    margin-left: 0;
+    margin-right: auto;
+    width: 350px;
+    max-width: 90%;
+    float: left;
+    
+}
+
+.row {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 20px;
+    background-color: #7d9cb7;
+}
+
+.body_img {
+    width: 50%;
+    border: 1vh solid #8ca4ac;
+    margin: auto;
+}
+
+.bg_img {
+    position: relative;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/6059ef5d59f1411908292205/4370a25e-b47d-4647-a0fa-36fce5eb5ea5/Hacking-Cybersecurity.gif?format=1000w');
+    background-size: cover;
+    background-position: center center; /* Focus on the middle part of the image */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.bg_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #1a2634 0%, #1a2634 10%, transparent 35%, transparent 90% , #1a2634 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.bg_img > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+    
+
+
+nav {
+    padding: 1rem;
+    text-align: center;
+    background-color: #217eaa;
+}
+
+/* Bar under images */
+.divider {
+    width: 100%;
+    background-color: #217eaa;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    
+    letter-spacing: 1px;
+}
+footer {
+    background-color: #217eaa;
+}
+
+.text {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text2 {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: ;
+}
+
