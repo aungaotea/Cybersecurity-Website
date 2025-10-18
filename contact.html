@@ -1,39 +1,93 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>CyberSecurity</title>
-    <meta name="description" content="" />
+    <title>CyberSecurity - Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="stylesheet.css" />
   </head>
+
   <body class="section-navy">
+    <!-- Header and Navigation -->
     <div class="header-nav-container">
       <header>
         <h1 class="header">CyberSecurity</h1>
       </header>
-      <nav>
-        <a href="index.html">Home</a> | <a href="about.html">About</a> |
-
-        <a href="contact.html">Contact</a>
+      <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html" aria-current="page">Contact</a>
       </nav>
     </div>
-    <div class="bg_img"></div>
+
+    <!-- Background Image Section -->
+    <div class="hero">
+      <h2 class="hero-overlay">Contact Us</h2>
+    </div>
+
+    <!-- Contact Form Section -->
     <section class="section-navy">
-      <h2 class="text">Contact</h2>
-      <p class="text">sdfasdsdfafds</p>
-      <div class="divider"></div>
-      <form class="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" rows="4" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <p>
+          Got a question about cybersecurity, online safety, or digital
+          privacy? Fill in the form below and we’ll get back to you soon.
+        </p>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name..."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email..."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your message..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <p
+          style="
+            text-align: center;
+            font-size: 14px;
+            color: #ccc;
+            margin-top: 10px;
+          "
+        >
+          *This is a demo form — no data is collected.
+        </p>
+      </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 CyberSecurity Project by Aung.</p>
+    </footer>
   </body>
 </html>
