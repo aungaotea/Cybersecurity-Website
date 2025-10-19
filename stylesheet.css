@@ -73,6 +73,19 @@ body {
   color: #f2f2f3;
 }
 
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #1a2634 0%, #1a2634 10%, transparent 35%, transparent 90% , #1a2634 100%);
+    pointer-events: none;
+    z-index: 1;
+
+}
+
 .hero-overlay h2 {
   font-size: 36px;
   margin-bottom: 15px;
