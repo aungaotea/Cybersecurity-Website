@@ -12,6 +12,11 @@ body {
   font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
   background-color: #f2f2f3;
   color: #1a2634;
+  transition: opacity 100ms ease;
+}
+
+body.preload {
+  opacity: 0;
 }
 
 /* Flex container for header and nav */
