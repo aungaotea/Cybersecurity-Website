@@ -1,55 +1,99 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>CyberSecurity</title>
-    <meta name="description" content="" />
+    <title>CyberSecurity - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="stylesheet.css" />
-    <link rel="icon" type="logo" src="images\images.jpg" />
+    <!-- Favicon: provide modern formats and a root fallback for Edge/legacy browsers -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/jpeg" href="images/images.jpg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
   </head>
-  <body class="section-navy">
-    <div class="header-nav-container">
-      <header>
-        <h1 class="header">CyberSecurity</h1>
-      </header>
-      <nav>
-        <a href="index.html">Home</a> | <a href="about.html">About</a> |
+  <body class="section-navy preload">
+    <!-- Header & Navigation -->
+    <header class="header-nav-container">
+      <h1 class="header">CyberSecurity</h1>
+      <nav aria-label="Main Navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
-    </div>
-    <div class="bg_img"></div>
-    <section class="section-navy">
-      <h2 class="text">Welcome to CyberSecurity</h2>
-      <p class="text">
-        This website is your guide to understanding cybersecurity. Explore the
-        sections to learn about online safety, common threats, and how to
-        protect yourself and your devices. Use the navigation above to get
-        started!
-      </p>
-      <div class="divider"></div>
-      <div class="row">
-        <img
-          class="body_img"
-          src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
-          alt="placeholder"
-        />
-        <img
-          class="body_img"
-          src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
-          alt="placeholder"
-        />
-        <img
-          class="body_img"
-          src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
-          alt="placeholder"
-        />
-      </div>
-      <div class="accent-box"><h2 class="text2">section</h2>
-      <p class="text2">ddd</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <h2>Welcome to CyberSecurity</h2>
+        <p>
+          Your guide to understanding online safety, common threats, and how to
+          protect yourself in the digital world.
+        </p>
       </div>
     </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section">
+      <h2 class="section-title">Learn More</h2>
+      <div class="row">
+        <div class="card">
+          <div class="card-icon">
+            <img
+              src="https://www.svgrepo.com/show/375476/phishing-protection.svg"
+              alt="Online Threats Icon"
+            />
+          </div>
+          <h3>Online Threats</h3>
+          <p>
+            Understand common online dangers such as phishing, malware, and
+            scams.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <img
+              src="https://www.svgrepo.com/show/381152/lock-protection-privacy-cyber-security-safety.svg"
+              alt="Protection Tips Icon"
+            />
+          </div>
+          <h3>Protection Tips</h3>
+          <p>
+            Learn simple ways to protect your accounts, passwords, and data
+            online.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <img
+              src="https://www.svgrepo.com/show/478349/ironclad-security.svg"
+              alt="Digital Safety Icon"
+            />
+          </div>
+          <h3>Digital Safety</h3>
+          <p>
+            Explore good online habits that keep you and others safe in the
+            digital world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accent Info Box -->
+    <section class="accent-box">
+      <h2>Why Cybersecurity Matters</h2>
+      <p>
+        In today’s digital world, cybersecurity keeps our personal information
+        safe. Understanding it helps us stay secure, responsible, and confident
+        online.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 CyberSecurity Project by Aung</p>
+    </footer>
+
+    <script src="scripts/page-transitions.js"></script>
   </body>
 </html>
